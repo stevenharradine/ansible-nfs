@@ -10,3 +10,10 @@
     - nfs
     - software-installation
     - using-apt
+
+- name: mount
+  mount:
+    state: mounted
+    fstype: nfs
+    src: "{{ nfs_client_source }}"
+    name: "{{ nfs_client_mount_point }}"
