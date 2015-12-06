@@ -1,0 +1,12 @@
+---
+- name: Install Packages | apt
+  apt:
+    state: latest
+    pkg: "{{ item }}"
+  with_items:
+    - nfs-common
+  when: nfs_client
+  tags:
+    - nfs
+    - software-installation
+    - using-apt

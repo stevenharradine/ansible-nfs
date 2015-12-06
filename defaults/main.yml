@@ -1,0 +1,6 @@
+---
+nfs_client: yes
+nfs_server: no
+
+nfs_client_source: 127.0.0.1:/mnt/data/
+nfs_client_mount_point: /data/www/remote_data/
