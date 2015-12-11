@@ -6,4 +6,4 @@ nfs_client_source: 127.0.0.1:/mnt/data/
 nfs_client_mount_point: /data/www/remote_data/
 
 nfs_server_exports:
-  - { path: /home/ubuntu/share, source: 127.0.0.1, permissions: "(rw,sync,no_subtree_check,no_root_squash)" }
+  - { path: /mnt/data/, source: 127.0.0.1, permissions: "(rw,sync,no_subtree_check,no_root_squash)" }
