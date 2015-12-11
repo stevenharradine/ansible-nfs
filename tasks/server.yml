@@ -1,0 +1,20 @@
+---
+- name: Install Packages | apt
+  apt:
+    state: latest
+    pkg: "{{ item }}"
+  with_items:
+    - nfs-kernel-server
+  tags:
+    - nfs
+    - software-installation
+    - using-apt
+
+- name: share paths
+  template:
+    src: "etc/exports"
+    dest: "/etc/exports"
+  tags:
+    - nfs
+    - configuration
+    - fragment-configuration
