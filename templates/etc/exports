@@ -1,5 +1,5 @@
 # {{ ansible_managed }}
 
 {%  for export in nfs_server_exports %}
-  {{ export.path }} {{ export.source }}{{ export.permissions }};
+{{ export.path }} {{ export.source }}{{ export.permissions }}
 {%  endfor %}
