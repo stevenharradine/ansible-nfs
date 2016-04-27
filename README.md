@@ -2,7 +2,6 @@
 [Ansible](http://www.ansible.com/) role to install and configure Network File Sharing (NFS) client and servers
 
 [![Licence](https://img.shields.io/badge/Licence-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-[![Role](https://img.shields.io/ansible/role/6393.svg)](https://galaxy.ansible.com/detail#/role/6269)
 [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg)](#)
 
 Tunables
